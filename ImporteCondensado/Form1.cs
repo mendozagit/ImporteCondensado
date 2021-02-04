@@ -27,8 +27,6 @@ namespace ImporteCondensado
         {
 
             var index = 0;
-         
-
             var numero = Nnumero.Value.ToString().Replace(".", "");
             var factor = Nfactor.Value.ToString();
 
@@ -41,6 +39,8 @@ namespace ImporteCondensado
             var factorMultiplicador = new List<int>();
             var resultado = new List<int>();
 
+
+            //Esto se puede optimizar todavia más
 
             foreach (var item in numeroList)
                 numeroMultiplicando.Add(int.Parse(item.ToString()));
